@@ -12,21 +12,21 @@ const Navbar = () => {
   return (
     <View className="w-full">
       <View className="w-full flex-row justify-around items-center px-5">
-        <MotiButton className="justify-center items-center p-2 pt-0 mb-5">
+        <MotiButton className="justify-center items-center p-2 pt-0 mb-5 mt-3">
           <EventsIcon />
         </MotiButton>
-        <MotiButton className="justify-center items-center p-2 pt-0 mb-5">
+        <MotiButton className="justify-center items-center p-2 pt-0 mb-5 mt-3">
           <PlayIcon />
         </MotiButton>
         <View>
-          <MotiButton className="justify-center bg-gray-950 items-center rounded-full relative bottom-7 pt-7 px-4">
+          <MotiButton className="justify-center items-center p-2 pt-0 mb-5 mt-3">
             <HomeIcon />
           </MotiButton>
         </View>
-        <MotiButton className="justify-center items-center p-2 pt-0 mb-5">
+        <MotiButton className="justify-center items-center p-2 pt-0 mb-5 mt-3">
           <TradingIcon />
         </MotiButton>
-        <MotiButton className="justify-center items-center p-2 pt-0 mb-5">
+        <MotiButton className="justify-center items-center p-2 pt-0 mb-5 mt-3">
           <ProfileIcon />
         </MotiButton>
       </View>
@@ -47,7 +47,7 @@ const PlayIcon = () => (
 );
 
 const HomeIcon = () => (
-  <Svg width="55" height="55" className="" viewBox="0 0 24 24" fill="white">
+  <Svg width="30" height="30" className="" viewBox="0 0 24 24" fill="white">
     <Path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
   </Svg>
 );

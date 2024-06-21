@@ -5,7 +5,7 @@ import Navbar from "../Navigation/Navbar.jsx";
 import TopName from "../TopName/TopName.jsx";
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import BackgroundImage2 from '../../assets/background/bullseye-gradient.png';
-
+import Event from './Events/Event.jsx';
 
 const Container = motify(View)();
 const HeaderText = motify(Text)();
@@ -17,47 +17,54 @@ const LogoImage = motify(Image)();
 const HomeScreen = () =>{
     return (
         <SafeAreaProvider>
-        <ScrollView contentContainerStyle={styles.container}>
-        <ImageBackground
-        className = "bg-slate-900"
-        style={styles.backgroundImage}
-        >
-            <Container className="mb-auto mt-0">
-                <TopName />
-            </Container>
-
-            <Container className="mt-auto mb-[-2px]">
-                <Navbar />
-            </Container>
-
-            </ImageBackground>
-        </ScrollView>
+            <View style={styles.container}>
+                <ImageBackground
+                    className= "bg-gray-950"
+                    style={styles.backgroundImage}
+                >
+                    <View>
+                        <TopName />
+                    </View>
+                    <ScrollView contentContainerStyle={styles.scrollContainer}>
+                        <View style={styles.eventsContainer}>
+                            <Event />
+                            <Event />
+                            <Event />
+                            <Event />
+                            <Event />
+                            <Event />
+                            <Event />
+                            <Event />
+                        </View>
+                    </ScrollView>
+                    <View>
+                        <Navbar />
+                    </View>
+                </ImageBackground>
+            </View>
         </SafeAreaProvider>
-        
-        
     )
 }
 
 const windowHeight = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
-  container: {
-    flexGrow : 1,
-    justifyContent : "center",
-    alignItems : "center",
-  },
-  backgroundImage: {
-    flex : 1,
-    resizeMode: 'cover',
-    width : "100%",
-    backgroundColor: "#030712",
-  },
-  logo: {
-    width: 27,
-    height: 27,
-    marginHorizontal: 10,
-    
-  },
+    container: {
+        flex: 1,
+    },
+    backgroundImage: {
+        flex: 1,
+        resizeMode: 'cover',
+        width: "100%",
+        backgroundColor: "#030712",
+    },
+    scrollContainer: {
+        flexGrow: 1,
+        paddingTop: 20, 
+    },
+    eventsContainer: {
+        paddingHorizontal: 20,
+    },
 });
 
 export default HomeScreen;
