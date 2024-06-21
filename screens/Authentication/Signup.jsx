@@ -36,14 +36,14 @@ const SignupScreen = ({navigation}) => {
           <Text className='text-white text-4xl font-extrabold my-auto text-center mx-10 mt-20'>
             Welcome to Campus Quest
           </Text>
-          <Text className='text-white text-xl font-thin my-auto text-center mx-10 mt-[-220px]'>
+          <Text className='text-white text-xl font-thin my-auto text-center mx-10 mt-[-150px]'>
             Your next adventure and fun place
           </Text>
         </Container>
 
         <Container className="mx-3 flex-1 justify-center mt-[-16px]">
           <InputField
-            className='bg-gray-800 text-white p-4 mb-3 rounded-lg'
+            className='bg-gray-950 text-white p-4 mb-3 rounded-lg'
             placeholder="Enter your full name"
             placeholderTextColor="#888888"
             keyboardType="default"
@@ -52,7 +52,7 @@ const SignupScreen = ({navigation}) => {
           />
 
           <InputField
-            className='bg-gray-800 text-white p-4 mb-3 rounded-lg'
+            className='bg-gray-950 text-white p-4 mb-3 rounded-lg'
             placeholder="Enter your email"
             placeholderTextColor="#888888"
             keyboardType="email-address"
@@ -61,7 +61,7 @@ const SignupScreen = ({navigation}) => {
           />
 
           <InputField
-            className='bg-gray-800 text-white p-4 mb-3 rounded-lg'
+            className='bg-gray-950 text-white p-4 mb-3 rounded-lg'
             placeholder="Create a password"
             placeholderTextColor="#888888"
             secureTextEntry={true}

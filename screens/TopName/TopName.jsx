@@ -10,7 +10,7 @@ const TopName = () =>{
     return(
         <View>
             <MotiButton className="justify-start bg-gray-950 pt-14">
-                <Text className="text-white text-4xl font-thin font-sans tracking-widest px-7 pb-2">College Quest</Text>
+                <Text className="text-white text-4xl font-thin font-sans tracking-widest px-7 pb-2">Campus Quest</Text>
             </MotiButton>
         </View>
     )

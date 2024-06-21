@@ -43,7 +43,7 @@ const LoginScreen = ({navigation}) => {
         <Container className=" mx-3 flex-1 justify-center mt-[-36px]">
 
           <InputField
-            className='bg-gray-800 text-white p-4 mb-3 rounded-lg'
+            className='bg-gray-950 text-white p-4 mb-3 rounded-lg'
             placeholder="Enter your email"
             placeholderTextColor="#888888"
             keyboardType="email-address"
@@ -52,7 +52,7 @@ const LoginScreen = ({navigation}) => {
           />
 
           <InputField
-            className='bg-gray-800 text-white p-4 mb-3 rounded-lg'
+            className='bg-gray-950 text-white p-4 mb-3 rounded-lg'
             placeholder="Create a password"
             placeholderTextColor="#888888"
             secureTextEntry={true}
