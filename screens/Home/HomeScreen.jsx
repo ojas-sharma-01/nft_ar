@@ -26,16 +26,13 @@ const HomeScreen = () =>{
                         <TopName />
                     </View>
                     <ScrollView contentContainerStyle={styles.scrollContainer}>
+                        
+                        
                         <View style={styles.eventsContainer}>
                             <Event />
-                            <Event />
-                            <Event />
-                            <Event />
-                            <Event />
-                            <Event />
-                            <Event />
-                            <Event />
                         </View>
+
+
                     </ScrollView>
                     <View>
                         <Navbar />
@@ -60,10 +57,7 @@ const styles = StyleSheet.create({
     },
     scrollContainer: {
         flexGrow: 1,
-        paddingTop: 20, 
-    },
-    eventsContainer: {
-        paddingHorizontal: 20,
+        paddingTop: 4, 
     },
 });
 

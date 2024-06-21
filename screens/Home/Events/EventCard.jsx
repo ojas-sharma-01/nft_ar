@@ -2,19 +2,18 @@ import React from "react";
 import { View , Text , TouchableOpacity} from "react-native";
 import { styled } from 'nativewind';
 import { motify } from 'moti';
-import EventCard from './EventCard';
 
 const StyledButton = styled(TouchableOpacity);
 const MotiButton = motify(StyledButton)();
 
-const Event = () =>{
+const EventCard = () =>{
     return(
         <View>
-            <MotiButton className="justify-start bg-black w-[90%] mx-auto p-8 mt-5 rounded-2xl">
-                <EventCard />
-            </MotiButton>
+            <View className="justify-start bg-black w-[90%] mx-auto p-8 mt-5 rounded-2xl">
+                <Text className="text-white text-4xl font-thin font-sans tracking-widest px-7 pb-2">Events</Text>
+            </View>
         </View>
     )
 }
 
-export default Event;
+export default EventCard;
