@@ -10,6 +10,7 @@ import AppleLogo from '../assets/background/apple-logo.png';
 import FacebookLogo from '../assets/background/facebook-logo.png';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { KeyboardAvoidingView } from 'react-native-web';
 
 const Container = motify(View)();
 const HeaderText = motify(Text)();
@@ -40,7 +41,7 @@ const SignupScreen = ({navigation}) => {
           </Text>
         </Container>
 
-        <Container className=" mx-3 flex-1 justify-center mt-[-16px]">
+        <Container className="mx-3 flex-1 justify-center mt-[-16px]">
           <InputField
             className='bg-gray-800 text-white p-4 mb-3 rounded-lg'
             placeholder="Enter your full name"
@@ -118,7 +119,9 @@ const styles = StyleSheet.create({
     alignItems : "center",
   },
   backgroundImage: {
+    flex : 1,
     resizeMode: 'cover',
+    width : "100%"
   },
   logo: {
     width: 27,

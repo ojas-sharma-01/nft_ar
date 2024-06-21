@@ -110,7 +110,9 @@ const styles = StyleSheet.create({
     alignItems : "center",
   },
   backgroundImage: {
+    flex : 1,
     resizeMode: 'cover',
+    width : "100%"
   },
   logo: {
     width: 27,
