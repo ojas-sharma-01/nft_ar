@@ -4,8 +4,6 @@ import { ScrollView, motify } from 'moti';
 import { styled } from 'nativewind';
 import { Link } from 'expo-router';
 
-import BackgroundImage1 from '../../assets/background/cornered-stairs.png';
-import BackgroundImage2 from '../../assets/background/bullseye-gradient.png';
 import GoogleLogo from '../../assets/background/gmail-logo.png';
 import AppleLogo from '../../assets/background/apple-logo.png';
 import FacebookLogo from '../../assets/background/facebook-logo.png';
@@ -27,7 +25,6 @@ const LoginScreen = ({navigation}) => {
     <SafeAreaProvider>
     <ScrollView contentContainerStyle = {styles.container}>
     <ImageBackground
-      source={BackgroundImage2}
       style={styles.backgroundImage}
     >
       <Container className='flex-1 p-4  bg-transparent justify-around'>
@@ -111,6 +108,7 @@ const styles = StyleSheet.create({
     alignItems : "center",
   },
   backgroundImage: {
+    backgroundColor: "#000000",
     flex : 1,
     resizeMode: 'cover',
     width : "100%"
