@@ -8,6 +8,9 @@ import HamburgerScreen from "./screens/Hamburger/HamburgerScreen.jsx";
 import NotificationScreen from "./screens/Notifications/NotificationScreen.jsx";
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import TradeScreen from "./screens/Trade/TradeScreen.js";
+import YourTradeScreen from './screens/Trade/Your/YourTradeScreen.js';
+import GlobalTradeScreen from './screens/Trade/Global/GlobalTradeScreen';
 const Stack = createNativeStackNavigator();
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
@@ -25,6 +28,9 @@ const App = () => {
                 <Stack.Screen name="ProfileScreen" component={ProfileScreen} options={{headerShown : false}}/>
                 <Stack.Screen name="HamburgerScreen" component={HamburgerScreen} options={{headerShown : false}}/>
                 <Stack.Screen name="NotificationScreen" component={NotificationScreen} options={{headerShown : false}}/>
+                <Stack.Screen name="Trade" component={TradeScreen} options={{headerShown : false}}/>
+                <Stack.Screen name="YourTrade" component={YourTradeScreen} />
+                <Stack.Screen name="GlobalTrade" component={GlobalTradeScreen} />
             </Stack.Navigator>
       </NavigationContainer>
     )
