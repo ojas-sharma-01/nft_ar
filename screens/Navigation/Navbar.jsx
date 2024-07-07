@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <View className="w-full">
       <View className="w-full flex-row justify-around items-center px-5 pb-3">
-        <MotiButton className="justify-center items-center p-2 pt-0 mb-5 mt-4" onPress={() => navigation.navigate('HomeScreen')}>
+        <MotiButton className="justify-center items-center p-2 pt-0 mb-5 mt-4" onPress={() => navigation.navigate('Events_Section')}>
           <EventsIcon />
         </MotiButton>
         <MotiButton className="justify-center items-center p-2 pt-0 mb-5 mt-4" onPress={() => navigation.navigate('HomeScreen')}>

@@ -13,6 +13,11 @@ import YourTradeScreen from './screens/Trade/Your/YourTradeScreen.js';
 import GlobalTradeScreen from './screens/Trade/Global/GlobalTradeScreen';
 const Stack = createNativeStackNavigator();
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Events_Section from './screens/Events_Leaderboard/Events_Section.jsx';
+import Leaderboard from "./screens/Home/Leaderboard/Leaderboard.jsx";
+import Register from "./screens/Events_Leaderboard/Register.jsx";
+import Registration_indiv from "./screens/Events_Leaderboard/Registration_indiv.jsx";
+import Registration_team from "./screens/Events_Leaderboard/Registration_team.jsx";
 
 const Tab = createBottomTabNavigator();
 
@@ -31,6 +36,11 @@ const App = () => {
                 <Stack.Screen name="Trade" component={TradeScreen} options={{headerShown : false}}/>
                 <Stack.Screen name="YourTrade" component={YourTradeScreen} />
                 <Stack.Screen name="GlobalTrade" component={GlobalTradeScreen} />
+                <Stack.Screen name="Events_Section" component={Events_Section} options={{headerShown : false}}></Stack.Screen>
+                <Stack.Screen name="LeaderBoard" component={Leaderboard} options={{headerShown : false}}></Stack.Screen>
+                <Stack.Screen name="Register" component={Register} options={{headerShown : false}}/>
+                <Stack.Screen name="Registration_indiv" component={Registration_indiv} options={{headerShown : false}}></Stack.Screen>
+                <Stack.Screen name="Registration_team" component={Registration_team} options={{headerShown : false}}></Stack.Screen>
             </Stack.Navigator>
       </NavigationContainer>
     )
