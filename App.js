@@ -14,7 +14,7 @@ import GlobalTradeScreen from './screens/Trade/Global/GlobalTradeScreen';
 const Stack = createNativeStackNavigator();
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Events_Section from './screens/Events_Leaderboard/Events_Section.jsx';
-import Leaderboard from "./screens/Home/Leaderboard/Leaderboard.jsx";
+import Leaderboard from "./screens/Events_Leaderboard/LeaderBoard.jsx";
 import Register from "./screens/Events_Leaderboard/Register.jsx";
 import Registration_indiv from "./screens/Events_Leaderboard/Registration_indiv.jsx";
 import Registration_team from "./screens/Events_Leaderboard/Registration_team.jsx";
